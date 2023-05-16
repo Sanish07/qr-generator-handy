@@ -1,0 +1,80 @@
+:root{
+  color-scheme: dark;
+}
+
+@font-face {
+  font-family: logo-font;
+  src: url("../public/fonts/Billabong.ttf");
+}
+
+body{
+  background: rgb(0,114,229);
+  background: linear-gradient(140deg, rgba(0,114,229,1) 0%, rgba(10,25,41,1) 100%);
+  min-height: 97vh;
+  color : white;
+}
+
+#logo-area{
+  color : #210062;
+  text-align: start;
+  font-family: logo-font;
+  font-size: 3.7rem;
+  margin-top: 3vh;
+  padding: 1vh 8vw;
+  span{
+    color : #F9E2AF;
+  }
+}
+
+#main-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3vh 5vw;
+  margin-top: 1vh;
+  *{
+    margin-left: 2vw;
+  }
+}
+
+.input-div{
+  font-size: 1.1rem;
+}
+
+.download-btn{
+  padding: 1vh 3vw;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color : #379237;
+  font-size: 1.05rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+#qr-title{
+  padding: 0.6vh 1.2vw;
+  background-color: rgba(43, 44, 62, 0.2);
+  border: 1px solid snow;
+  border-radius: 8px;
+}
+
+.download-btn:hover{
+  transition: 600ms;
+  background-color: #38E54D;
+}
+
+textarea{
+  background: rgba(43, 44, 62, 0.2);
+  color : whitesmoke;
+  padding: 1vh 1vw;
+  font-size: 1.05rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gen-qr{
+  margin-top: 7vh;
+}
+
+label{
+  margin-top: 4vh;
+}

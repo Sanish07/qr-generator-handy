@@ -49,80 +49,93 @@ const Main = () => {
 
   return (
     <>
-      <div className="input-div">
-        <label>Enter QR Value (Text or URL) : </label>
-        <textarea
-          type="text"
-          placeholder="Enter QR text"
-          onChange={handleQRChange}
-          id="qr-value"
-          rows={4}
-          cols={50}
-        />{" "}
-        <br />
-        <label>Enter QR Title : </label>
-        <input
-          type="text"
-          placeholder="Enter QR Title"
-          onChange={handleQRChange}
-          id="qr-title"
-        />{" "}
-        <br />
-        <label>Set QR Background : </label>
-        <input
-          type="color"
-          onChange={handleQRChange}
-          id="qr-bg"
-          value={bgColor}
-        />{" "}
-        <br />
-        <label>Set QR Foreground : </label>
-        <input
-          type="color"
-          onChange={handleQRChange}
-          id="qr-fg"
-          value={fgColor}
-        />{" "}
-        <br />
-        <label>Set QR Size : </label>
-        <input
-          type="range"
-          onChange={handleQRChange}
-          id="qr-size"
-          min={150}
-          max={400}
-        />{" "}
-        <br />
-        <label>Set QR Level : </label>
-        <select id="qr-level" onChange={handleQRChange} defaultValue={"L"}>
-          <option value="L">Level L</option>
-          <option value="M">Level M</option>
-          <option value="Q">Level Q</option>
-          <option value="H">Level H</option>
-        </select>
-        <br />
-        <input
-          type="button"
-          className="download-btn"
-          value="Download"
-          onClick={handleDownload}
-        />
-      </div>
-      <div className="qr-div">
-        {value !== "" ? (
-          <QRCode
-            id="gen-qr"
-            value={value}
-            bgColor={bgColor}
-            fgColor={fgColor}
-            title={title}
-            size={size}
-            level={level}
-          />
-        ) : (
-          <></>
-        )}
-        <br />
+      <div id="logo-area"><span>Handy</span> QR</div>
+      <div id="main-area">
+          <div className="input-div">
+            <h4>Enter QR Value (Text or URL) : </h4>
+            <textarea
+              type="text"
+              placeholder="Enter QR text"
+              onChange={handleQRChange}
+              id="qr-value"
+              rows={4}
+              cols={50}
+            />{" "}
+            
+            <br/><br/>
+    
+            <label>Enter QR Title : </label>
+            <input
+              type="text"
+              placeholder="Enter QR Title"
+              onChange={handleQRChange}
+              id="qr-title"
+            />{" "}
+            <br/><br/>
+            
+            <label>Set QR Background : </label>
+            <input
+              type="color"
+              onChange={handleQRChange}
+              id="qr-bg"
+              value={bgColor}
+            />{" "}
+            <br /><br/>
+            
+            <label>Set QR Foreground : </label>
+            <input
+              type="color"
+              onChange={handleQRChange}
+              id="qr-fg"
+              value={fgColor}
+            />{" "}
+            <br/><br/>
+            
+            <label>Set QR Size : </label>
+            <input
+              type="range"
+              onChange={handleQRChange}
+              id="qr-size"
+              min={150}
+              max={400}
+            />{" "}
+            
+            <br/><br/>
+            
+            <label>Set QR Level : </label>
+            <select id="qr-level" onChange={handleQRChange} defaultValue={"L"}>
+              <option value="L">Level L</option>
+              <option value="M">Level M</option>
+              <option value="Q">Level Q</option>
+              <option value="H">Level H</option>
+            </select>
+            
+            <br/><br/>
+            
+            <input
+              type="button"
+              className="download-btn"
+              value="Download QR"
+              onClick={handleDownload}
+            />
+          
+          </div>
+          <div className="qr-div">
+            {value !== "" ? (
+              <QRCode
+                id="gen-qr"
+                value={value}
+                bgColor={bgColor}
+                fgColor={fgColor}
+                title={title}
+                size={size}
+                level={level}
+              />
+            ) : (
+              <></>
+            )}
+            <br />
+          </div>
       </div>
     </>
   );
