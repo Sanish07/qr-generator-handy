@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/qr-generator-handy/static/css/main.96f126d2.css",
+    "main.js": "/qr-generator-handy/static/js/main.01321f6c.js",
+    "static/js/787.3e0705c2.chunk.js": "/qr-generator-handy/static/js/787.3e0705c2.chunk.js",
+    "static/media/Billabong.ttf": "/qr-generator-handy/static/media/Billabong.0e94b13a1cfb505ff271.ttf",
+    "index.html": "/qr-generator-handy/index.html",
+    "main.96f126d2.css.map": "/qr-generator-handy/static/css/main.96f126d2.css.map",
+    "main.01321f6c.js.map": "/qr-generator-handy/static/js/main.01321f6c.js.map",
+    "787.3e0705c2.chunk.js.map": "/qr-generator-handy/static/js/787.3e0705c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96f126d2.css",
+    "static/js/main.01321f6c.js"
+  ]
+}
